@@ -27,6 +27,16 @@ a {
   color: unset;
 }
 
+ul {
+  list-style: none;
+}
+
+.not-home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .container {
   max-width: 128rem;
   padding: 0 5rem;
@@ -47,6 +57,8 @@ a {
   z-index: 1;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -99,7 +111,8 @@ a {
   text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
 }
 
-.projects-links {
+.projects-links,
+.about-list {
   margin-top: 3.5rem;
 }
 
@@ -110,14 +123,24 @@ a {
   text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
 }
 
-.footer {
-  position: absolute;
-  bottom: 4rem;
-  right: 0;
+.about-list-item {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  font-size: 3rem;
+  margin-top: 2.5rem;
+  text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+.about-list-title {
+  display: block;
+  width: 4.5rem;
 }
 
 .footer-links {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   column-gap: 3.5rem;
 }
@@ -126,6 +149,22 @@ a {
   font-size: 2.6rem;
   font-weight: 400;
   text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+.wrapper-content {
+  flex: 1;
+}
+
+.footer-page,
+.footer {
+  padding-bottom: 1.5rem;
+}
+
+.footer-back-link {
+  display: block;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
 }
 
 /* Media Queries */
@@ -156,7 +195,7 @@ a {
 @media (max-width: 700px) {
   .container {
     padding: 0;
-    width: min(100% - 1.5rem);
+    width: min(100% - 2.5rem);
   }
 
   .main-container {
@@ -171,10 +210,6 @@ a {
     column-gap: 2.5rem;
   }
 
-  .footer {
-    right: 1.5rem;
-  }
-
   .navlink,
   .footer-link {
     font-size: 2rem;
@@ -184,12 +219,21 @@ a {
     font-size: 5rem;
   }
 
-  .projects-link {
+  .projects-link,
+  .about-list-item {
     font-size: 2.2rem;
+  }
+
+  .about-list-title {
+    width: 2.5rem;
   }
 }
 
 @media (max-width: 550px) {
+  .header-link > img {
+    width: 35rem;
+  }
+
   .header-content {
     flex-direction: column;
     row-gap: 2rem;
@@ -200,15 +244,11 @@ a {
     row-gap: 1.5rem;
   }
 
-  .footer {
-    position: static;
-    width: 100%;
-    right: 0;
-    bottom: 0;
-    padding-bottom: 1.5rem;
-  }
-
   .projects {
     margin: 10rem 0;
+  }
+
+  .footer-back-link {
+    font-size: 3.2rem;
   }
 }
