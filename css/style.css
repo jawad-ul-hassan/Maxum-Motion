@@ -112,8 +112,21 @@ ul {
 }
 
 .projects-links,
-.about-list {
+.about-list,
+.about-content {
   margin-top: 3.5rem;
+}
+
+.about-content {
+  max-width: 76.7rem;
+  width: 100%;
+}
+
+.about-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  margin-top: 2.5rem;
+  text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
 }
 
 .projects-link {
@@ -220,7 +233,8 @@ ul {
   }
 
   .projects-link,
-  .about-list-item {
+  .about-list-item,
+  .about-text {
     font-size: 2.2rem;
   }
 
