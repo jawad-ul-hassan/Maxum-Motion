@@ -160,7 +160,7 @@ a {
   }
 
   .main-container {
-    width: min(100% - 1.5rem);
+    width: min(100% - 2.5rem);
   }
 
   .header-link > img {
@@ -201,8 +201,14 @@ a {
   }
 
   .footer {
+    position: static;
     width: 100%;
     right: 0;
-    bottom: 2rem;
+    bottom: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  .projects {
+    margin: 10rem 0;
   }
 }
