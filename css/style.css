@@ -155,6 +155,10 @@ ul {
   margin-top: 3.5rem;
 }
 
+.projects-link:hover {
+  font-weight: 600;
+}
+
 .about-content {
   max-width: 76.7rem;
   width: 100%;
@@ -278,6 +282,87 @@ ul {
 
 /* Media Queries */
 
+@media screen and (min-width: 3840px) {
+  .container {
+    max-width: 3500px;
+    margin: 0 auto;
+  }
+
+  .main-container {
+    max-width: 3400px;
+    margin: 0 auto;
+  }
+
+  .about-content {
+    max-width: 3000px;
+    width: 100%;
+  }
+
+  .project-container {
+    max-width: 3000px;
+  }
+
+  .header-link > img {
+    display: block;
+    width: 100rem;
+  }
+
+  .navlink,
+  .footer-link {
+    font-size: 5.2rem;
+  }
+
+  .projects-title {
+    font-size: 12rem;
+  }
+
+  .projects-link,
+  .about-text,
+  .about-list-item {
+    font-size: 6rem;
+  }
+
+  .about-list-title {
+    width: 9rem;
+  }
+
+  .footer-back-link {
+    font-size: 8rem;
+  }
+
+  .video-project-title {
+    font-size: 6.4rem;
+  }
+
+  .footer-links,
+  .navbar {
+    column-gap: 7rem;
+  }
+
+  .projects {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    padding: 3rem 0;
+  }
+
+  .footer-page,
+  .footer {
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .projects-title {
+    font-size: 5rem;
+  }
+}
+
 @media (max-width: 935px) {
   .container {
     padding: 0 3rem;
@@ -299,6 +384,48 @@ ul {
   .bg-video.desktop {
     display: none;
   }
+
+  .projects-title {
+    font-size: 3.5rem;
+  }
+
+  .daten-title {
+    font-size: 2.8rem;
+  }
+
+  .daten-subtitle {
+    font-size: 2.2rem;
+  }
+
+  .daten-question,
+  .daten-answer,
+  .daten-subtitle,
+  .daten-list > li {
+    font-size: 1.8rem;
+  }
+
+  .daten-desc {
+    font-size: 1.8rem;
+  }
+
+  .navlink,
+  .footer-link {
+    font-size: 1.8rem;
+  }
+
+  .projects-link,
+  .about-list-item,
+  .about-text {
+    font-size: 2rem;
+  }
+
+  .about-list-title {
+    width: 2.3rem;
+  }
+
+  .video-project-title {
+    font-size: 2.3rem;
+  }
 }
 
 @media (max-width: 700px) {
@@ -317,29 +444,6 @@ ul {
 
   .navbar {
     column-gap: 2.5rem;
-  }
-
-  .navlink,
-  .footer-link {
-    font-size: 2rem;
-  }
-
-  .projects-title {
-    font-size: 5rem;
-  }
-
-  .projects-link,
-  .about-list-item,
-  .about-text {
-    font-size: 2.2rem;
-  }
-
-  .about-list-title {
-    width: 2.5rem;
-  }
-
-  .video-project-title {
-    font-size: 2.6rem;
   }
 }
 
@@ -364,5 +468,33 @@ ul {
 
   .footer-back-link {
     font-size: 3.2rem;
+  }
+
+  .projects-title {
+    font-size: 2.3rem;
+  }
+
+  .daten-title {
+    font-size: 2rem;
+  }
+
+  .daten-subtitle,
+  .daten-list > li {
+    font-size: 1.6rem;
+  }
+
+  .daten-question,
+  .daten-answer {
+    font-size: 1.6rem;
+  }
+
+  .daten-desc {
+    font-size: 1.6rem;
+  }
+
+  .projects-link,
+  .about-list-item,
+  .about-text {
+    font-size: 1.8rem;
   }
 }
